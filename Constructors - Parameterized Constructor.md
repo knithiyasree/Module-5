@@ -4,7 +4,7 @@
 ---
 
 ### AIM  
-To write a Python code to create a class for a person with a parameterized constructor, which will take the `name` and `userid` of the person as parameters and print the `userid` of the person.
+To Write a python code to implement a parameterised constructor that will initialize the name and age of the student and print the details using user defined function.
 
 ---
 
@@ -24,9 +24,24 @@ To write a Python code to create a class for a person with a parameterized const
 ### PROGRAM
 
 ```
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Student name is :", self.name)
+        print("Student age is : ", self.age)
+
+name = input()
+age = input()
+s = Student(name, age)
+s.display()
 
 ```
 
 ### OUTPUT
+<img width="892" height="185" alt="image" src="https://github.com/user-attachments/assets/dcf31636-fd5a-4dcf-9a7f-92f0821d88bc" />
 
-### RESULT
+### RESULT:
+Thus a python code to implement a parameterised constructor that will initialize the name and age of the student and print the details using user defined function.

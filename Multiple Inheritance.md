@@ -32,14 +32,46 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ### PROGRAM
 
 ```
+class Parent:
+   def __init__(self,name):
+     self.name = name
+   def getName(self):
+     return self.name
+class Child(Parent):
+   def __init__(self,name,rollno):
+     Parent.__init__(self,name)
+     self.rollno = rollno
+   def getrollno(self):
+     return self.rollno
+class Grandchild(Child):
+   def __init__(self,name,rollno,p,c,m,b):
+     Child.__init__(self,name,rollno)
+     self.p=p
+     self.c=c
+     self.m=m
+     self.b=b
+   def gettotal(self):
+       
+     return self.p+ self.c+ self.m + self.b
+name=input()
+rollno=int(input())
+p=int(input())
+c=int(input())
+m=int(input())
+b=int(input())
+gc = Grandchild(name,rollno,p,c,m,b)
+av=gc.gettotal()
+avg=av/4
+print("Name: ",gc.getName(),"Rollno: " ,gc.getrollno(), "Total Marks out of 400: ",gc.gettotal())
+print("Average :",avg)
+
 
 ```
 
 ### OUTPUT
+<img width="1273" height="388" alt="Screenshot 2025-09-02 133051" src="https://github.com/user-attachments/assets/3d7fb626-ffee-4014-b7ee-20c86eef6a97" />
 
 
-### RESULT
-
-
-
+### RESULT:
+Thus a a Python program to get the name, attendance, and ID of a student and check if they are eligible for the next module using multiple inheritance has been executed successfully.
 

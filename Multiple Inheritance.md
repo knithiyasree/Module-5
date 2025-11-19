@@ -1,4 +1,4 @@
-# Exp.No:23  
+# Exp.No:5  
 ## Multiple Inheritance
 
 ---

@@ -1,4 +1,4 @@
-# Exp.No:25  
+# Exp.No:5  
 ## Hierarchical Inheritance
 
 ---
